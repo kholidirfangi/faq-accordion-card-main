@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  padding-bottom: 80px;
+}
+
+.illustration {
+  margin-top: -262px;
+  padding-bottom: 30px;
+}
+
+.card {
+  width: 90%;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 24px;
+  background-color: white;
+  padding: 140px 20px 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+div.questions-wrap {
+  padding: 10px 0;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+div.questions {
+  padding-bottom: 5px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+p.question:not(p.weight):hover {
+  color: #f47b56;
+}
+
+p.question:hover {
+  cursor: pointer;
+}
+
+p.description {
+  font-size: 0.83rem;
+  color: hsl(240, 6%, 50%);
+  padding: 10px 25px 8px 0;
+}
+
+.arrow-down {
+  display: inline;
+  cursor: pointer;
+}
+
+/* hide element */
+.hidden {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.weight {
+  font-weight: 700;
+}
+
+.illustration-box {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  img.illustration-mobile {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  img.pattern-mobile {
+    width: 90%;
+    margin-top: -82px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  img.illustration-desktop,
+  img.pattern-desktop {
+    display: none;
+  }
+  .illustration-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  img.illustration-mobile,
+  img.pattern-mobile {
+    display: none;
+  }
+
+  img.illustration-desktop {
+    display: block;
+    position: absolute;
+    width: 550px;
+    top: 20px;
+    left: -100px;
+    z-index: 1;
+  }
+
+  img.pattern-desktop {
+    width: 880px;
+    display: block;
+    position: absolute;
+    top: -250px;
+    left: -440px;
+  }
+
+  .card {
+    display: flex;
+    position: relative;
+    width: 70%;
+    min-height: 500px;
+    align-items: space-between;
+    justify-content: space-between;
+    padding: 60px 80px;
+    overflow: hidden;
+    margin-top: 120px;
+  }
+
+  .illustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0 0 -150px;
+  }
+
+  .faq {
+    width: 400px;
+  }
+
+  .illustration-box {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 95px;
+    top: 320px;
+    transform: scale(1.2);
+  }
+}
